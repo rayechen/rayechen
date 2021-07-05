@@ -10,6 +10,12 @@ on:
     branches: [ main ]
 
 jobs:
+  show_github_env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show git hub env
+        run: |
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE."
   build:
 
     runs-on: ubuntu-latest
